@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat
+        app:key="notifications_enabled"
+        app:title="Enable Notifications"
+        app:defaultValue="true" />
+
+    <EditTextPreference
+        app:key="notification_advance_time"
+        app:title="Notification Advance Time"
+        app:useSimpleSummaryProvider="true"
+        app:defaultValue="10" />
+
+    <EditTextPreference
+        app:key="USER_CITY" app:title="City for Weather"
+        app:summary="Enter your city name (e.g. Ljubljana, Slovenia)"
+        app:useSimpleSummaryProvider="true"
+        app:defaultValue="Ljubljana, Slovenia" />
+
+    <Preference
+        app:key="reset_app"
+        app:title="Reset App" />
+</PreferenceScreen>

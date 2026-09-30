@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/routineListFragment">
+
+    <fragment
+        android:id="@+id/routineListFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.RoutineListFragment"
+        tools:layout="@layout/fragment_routine_list"/>
+
+    <fragment
+        android:id="@+id/routineDetailsFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.RoutineDetailsFragment"
+        tools:layout="@layout/fragment_routine_details">
+        <argument
+            android:name="routineId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditRoutineFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.AddEditRoutineFragment"
+        tools:layout="@layout/fragment_routine_add_edit">
+        <argument
+            android:name="routineId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="si.uni_lj.fri.pbd.routinetracker.SettingsFragment"  />
+</navigation>
