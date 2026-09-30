@@ -14,4 +14,4 @@ Kotlin · Android Fragments · Navigation Component (Safe Args) · Jetpack Compo
 
 ## About
 
-Built as part of my Computer Science studies at the University of Piraeus.
+Built as part of my Computer Science studies at the University of Ljubjana.
